@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-A 기호정</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <style>
+        body{
+            background-image:url(img/background.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+
+        }
+        img {
+            margin-top: 100px;
+            border-radius: 40px;
+            background-repeat: no-repeat;
+            width: 400px;
+        }
+        div {
+        	padding-top: 500px;
+        }
+        #logo {
+        	color: lightgray;
+        	background-color: #333333;
+        	font-size: 18px;
+        	margin: 0 43%;
+        }
+        .full-landing-image{
+		width: 100%;
+		height: 100%;
+		}
+		#app{
+			position: absolute;
+			top:-38%;
+			left:44%;
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+		}
+    </style>
+</head>
+<body>
+    <center><a href = "main.html">
+        <img src ="img/LOGO.JPG"></a> </center>
+        <br>
+    <center><div id="app"></div></center>
+
+    <div class="full-landing-image">
+    <script>
+    $(".full-landing-image").ripples({
+        resolution: 200,
+        perturbance:0.04,
+    });
+    </script>
+</div>
+
+</body>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+ 
+   <script type="text/javascript">
+        var app = document.getElementById('app');
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+  
+        typewriter.typeString('로고를 눌러주세요!')
+            .pauseFor(2500)
+            .deleteAll()
+            .start();
+    </script>
+</html>

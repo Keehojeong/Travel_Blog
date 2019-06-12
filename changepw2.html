@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited { 
+    color: gray;
+    text-decoration:none;
+}
+
+a:hover {
+    color: darkkhaki;
+}
+legend{
+        text-align: center;
+        font-weight: bold;
+        font-size:28px;
+}
+#one{
+        border: 3px solid lightgray;
+        padding: 3% 5%;
+        margin: 0 6%;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+#pro{
+        float: right;
+        margin-top: 13%;
+        margin-left: 5%;
+        position: relative;
+    }
+body {
+background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+align-content: center;
+padding: 10px;
+}
+#world {
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+}
+footer{
+    color:#ccc;
+    margin: 10px;
+    text-align: center;
+    clear: both;
+}
+nav{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+</style>
+</head>
+<body>
+<nav> <a href = "login.html">LOGOUT</a>  |  <a href = "gesi1.html"> 공지사항</a> </nav>   
+<hr color="lightgray">
+<header>
+    <center>
+    <a href = "index3.html" id="world">The World
+    </a>
+    </center> 
+</header>
+<hr color="lightgray">
+<br><br>
+<fieldset id="one">
+    <legend>정보변경</legend>
+<figure>
+<img src="img/q.jpg" width="500px;" id="pro">
+</figure>
+아이디 : emily3359@naver.com
+<br><br>
+<label for="u_password1">비밀번호 &nbsp;: <input type="password" id="u_password1" required placeholder="비밀번호" minlength="4" maxlength="15" size="15"></label>
+<small style="color:red"> 4~15자리 이내의 영문과 숫자 특수기호</small>
+<br><br>
+<label for="u_password2">비밀번호 확인 : <input type="password" id="u_password2" required placeholder="비밀번호확인" minlength="4" maxlength="15" size="15"></label>
+<small style="color:blue"> 비밀번호를 확인해주세요.</small>
+<br><br>
+이름&nbsp;&nbsp;&nbsp;&nbsp;: 기호정
+<br><br>
+닉네임&nbsp;: 관리자
+<br><br>
+성별&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 여자
+<br><br>
+생일&nbsp;&nbsp;&nbsp;&nbsp;: 2000.05.09
+<br><br>    
+    이메일&nbsp;&nbsp;: emily3359@naver.com
+<br><br>  
+전화번호 : 010-3654-6116
+<br><br>
+전화 번호 변경 : 
+<select>
+<option value="010">010</option>
+<option value="017">017</option>
+<option value="011">011</option>
+<option value="016">016</option>
+</select>
+<input type="tel" id="u_tel" min="7" maxlength="8" size="15">
+<input type="button" value="인증번호발송" onclick="alert('인증번호가 발송되었습니다.')">
+<br><br>
+인증번호&nbsp;&nbsp;&nbsp;:
+<input type="text" placeholder="인증번호">
+<input type="button" value="인증확인" onclick="alert('인증이 완료 되었습니다.')">
+<br><br>
+회원등급 : 관리자
+<br><br>
+</fieldset>
+<br><br>
+<a href="index3.html" alter="" target="_self"><input type="button" value="개인정보변경" onclick="alert('정보가 변경되었습니다.')" style="float: right; margin-right: 8%;"></a>
+
+	<br><br><br><br><br><br>
+<footer>
+<hr color="lightgray">
+<h6>동양미래대 컴퓨터 정보공학과 20190747 기호정</h6>
+<h6>emily3359@naver.com</h6>
+</footer>
+</body>
+</html>

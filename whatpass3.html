@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>pw 찾기</title>
+<style>
+body {
+background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+align-content: center;
+padding: 10px;
+}
+#world {
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+}
+.BBB{
+    width:90%;
+    margin: 0 auto;
+    padding: 10px 30px 150px 30px;
+}
+    a:link, a:visited { 
+    color: gray;
+    text-decoration:none;
+    font-size: 15px;
+}
+
+a:hover{
+    color: darkkhaki;
+    
+}
+
+header{
+    
+     align-content: center;
+}
+nav{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+    footer{
+    color:#ccc;
+    margin: 10px;
+    text-align: center;
+    clear: both;}
+</style>
+</head>
+<body>
+<nav> <a href = "login.html">LOGIN</a>  |  <a href = "join.html"> 회원가입</a> </nav>   
+<hr color="lightgray">
+<header>
+    <center>
+    <a href = "index2.html" id="world">The World
+    </a>
+    </center> 
+    </header>
+<hr color="lightgray">
+<div class="BBB">
+<h1>※NEW PASSWORD</h1>
+<h2>새로운 비밀번호를 입력해 주세요</h2>
+
+<br>
+<table width="750" height="198" border="0">
+ <tr><td><label for="u_password1">새로운 비밀번호 : <input type="password" id="u_password1" required placeholder="비밀번호" minlength="4" maxlength="15" size="15"></label>
+<small style="color:red"> 4~15자리 이내의 영문과 숫자 특수기호</small>
+<br><br>
+<label for="u_password2">비밀번호&nbsp; 확인 &nbsp;&nbsp;: <input type="password" id="u_password2" required placeholder="비밀번호확인" minlength="4" maxlength="15" size="15"></label>
+<small style="color:blue"> 비밀번호를 확인해주세요.</small></td></tr>
+    <tr><td><a href="index3.html"><input type="button" value="비밀번호변경" onclick="alert('비밀번호가 변경되었습니다.')"></a></td></tr>
+</table>
+
+</div>
+<footer>
+<hr color="lightgray">
+<h6>동양미래대 컴퓨터 정보공학과 20190747 기호정</h6>
+<h6>emily3359@naver.com</h6>
+</footer>
+</body>
+</html>
