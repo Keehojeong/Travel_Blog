@@ -30,10 +30,9 @@ section{
     background-size: contain;
 }
 article {
-    height:768px; 
     float: right;
     background-color: rgba(211,211,211,0.8);
-    background-size: contain;
+    padding: 0 10px;
 }
 
 footer{
